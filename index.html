@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小和 · 个人作品集 — AI 辅助开发 & 大语言模型应用</title>
+  <meta name="description" content="小和的个人作品集：AI 辅助开发与大语言模型应用方向的项目档案，原生 HTML / CSS / JavaScript 手工打造。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='80' text-anchor='middle' font-size='88' fill='%23E8491D'%3E%E2%9C%B3%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top">小和<span class="mark">&#10035;&#xFE0E;</span></a>
+      <nav class="site-nav" id="siteNav" aria-label="站内导航">
+        <a href="#works"><span class="nav-no">01</span>作品</a>
+        <a href="#about"><span class="nav-no">02</span>关于</a>
+        <a href="#contact"><span class="nav-no">03</span>联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 首屏：个人介绍 -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-kicker mono">
+          <span>个人作品集 · PORTFOLIO</span>
+          <span class="acc">小和 XIAOHE</span>
+          <span>VOL.03 — 2026</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-line">把课堂上的想法，</span>
+          <span class="hero-line hero-line--xl">做成<em>看得见、摸得着</em>的产品</span>
+        </h1>
+      </div>
+      <div class="container hero-bottom">
+        <p class="hero-intro">我是<strong>小和</strong>，软件工程专业在读，目前主要关注<strong>AI 辅助开发</strong>与<strong>大语言模型</strong>技术，平时多用 Python、Java 和 TypeScript 做项目。</p>
+        <div class="hero-side">
+          <a class="hero-scroll mono" href="#works">向下滚动 ↓</a>
+          <div class="hero-stats mono">
+            <span><b>04</b> 个精选项目</span>
+            <span><b>04</b> 项常用技能</span>
+            <span><b>00</b> 个框架依赖</span>
+          </div>
+        </div>
+      </div>
+      <span class="hero-asterisk" aria-hidden="true">&#10035;&#xFE0E;</span>
+    </section>
+
+    <!-- 项目作品 -->
+    <section class="works" id="works">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-label mono">SELECTED WORKS</span>
+          <h2 class="section-title">作品档案</h2>
+          <span class="section-count mono" id="worksCount">(04)</span>
+        </header>
+        <div class="project-list" id="projectList"></div>
+        <noscript><p class="noscript-tip mono">项目列表需要启用 JavaScript 后加载。</p></noscript>
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-label mono">ABOUT</span>
+          <h2 class="section-title">关于我</h2>
+        </header>
+        <div class="about-grid">
+          <figure class="about-photo reveal">
+            <div class="media-frame">
+              <img src="assets/portrait.png" alt="小和的个人照片" loading="lazy">
+            </div>
+            <figcaption class="mono">GUANGZHOU · 2026</figcaption>
+          </figure>
+          <div class="about-content">
+            <p class="about-lead reveal">我是<em>小和</em>，软件工程专业在读（广州软件学院）。目前主要关注<em>AI 辅助开发</em>与<em>大语言模型应用</em>。</p>
+            <p class="about-text reveal">平时主要使用 Python、Java 和 TypeScript 进行项目开发，也在持续学习前后端开发、数据可视化与 AI 应用构建。你正在看的这个页面是一次练习——不依赖任何框架，用原生 HTML、CSS 和 JavaScript 手工完成。</p>
+            <ul class="skill-list reveal">
+              <li>
+                <span class="skill-no mono">01</span>
+                <div>
+                  <h3>当前方向</h3>
+                  <p>AI 辅助开发 · 大语言模型应用</p>
+                </div>
+              </li>
+              <li>
+                <span class="skill-no mono">02</span>
+                <div>
+                  <h3>主要技能</h3>
+                  <p>Python · Java · TypeScript · HTML / CSS</p>
+                </div>
+              </li>
+              <li>
+                <span class="skill-no mono">03</span>
+                <div>
+                  <h3>持续学习</h3>
+                  <p>前后端开发 · 数据可视化 · AI 应用构建</p>
+                </div>
+              </li>
+              <li>
+                <span class="skill-no mono">04</span>
+                <div>
+                  <h3>教育背景</h3>
+                  <p>广州软件学院 · 软件工程专业在读</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <span class="contact-label mono">CONTACT · 联系我</span>
+        <h2 class="contact-title">有个想法？<br>随时来聊聊<em>.</em></h2>
+        <a class="contact-mail" href="mailto:xiaohe@example.com">xiaohe@example.com<span>↗</span></a>
+        <ul class="contact-meta mono">
+          <li>微信 · xiaohezi</li>
+          <li>GitHub · <a href="https://github.com/xiaohe-dev" target="_blank" rel="noopener">github.com/xiaohe-dev</a></li>
+          <li>主页 · <a href="https://xiaohe.dev" target="_blank" rel="noopener">xiaohe.dev</a></li>
+          <li>坐标 · 中国 · 广州</li>
+        </ul>
+        <footer class="site-footer">
+          <span>© <span id="year">2026</span> 小和 · XIAOHE</span>
+          <span>HANDCRAFTED WITH VANILLA HTML / CSS / JS</span>
+          <a href="#top">回到顶部 ↑</a>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
